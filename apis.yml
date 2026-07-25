@@ -1,7 +1,25 @@
 aid: coveti
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/coveti.png
 name: Coveti
-description: Coveti is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Coveti is a curated luxury fashion marketplace that connects consumers
+  with independent designers and exclusive heritage boutiques across Milan and Paris
+  through what it calls "Agentic Commerce" - AI-powered personal styling. Its Fashion
+  Agent builds looks for specific occasions, while The Blind Network sources from 500+
+  boutiques, offering global shipping to 190+ countries, duty handling, custom 3D shoe
+  design, and private client concierge services. Surfaced as a portfolio company of
+  500 Global and tracked in the API Evangelist network; no public developer/API surface
+  was found during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/coveti/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fashion
+- Luxury
+- Marketplace
+- Ecommerce
+- Retail
+- Agentic Commerce
+- AI Styling
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/coveti-domain-security.yml
 - type: Website
   url: https://coveti.com
+- type: Support
+  url: https://coveti.com/faqs/
+- type: TermsOfService
+  url: https://coveti.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://coveti.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
